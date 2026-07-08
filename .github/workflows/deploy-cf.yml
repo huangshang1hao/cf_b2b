@@ -7,6 +7,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+
+      # 配置Node18环境
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      # 自动安装全部依赖包
+      - name: Install dependencies
+        run: npm install
+
+      # 执行Cloudflare部署
       - name: 部署Worker项目
         uses: cloudflare/wrangler-action@v3
         with:
