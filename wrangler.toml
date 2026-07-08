@@ -1,12 +1,12 @@
-name = "cf-b2b-website"
+name = "cf_b2b_shop"
 main = "src/index.js"
-compatibility_date = "2025-01-01"
+compatibility_date = "2026-07-08"
 
 # D1 Database binding
 [[d1_databases]]
 binding = "DB"
-database_name = "b2b_database"
-database_id = "8755429a-7eb4-4dac-8aa4-55e4b58b2f63"
+database_name = "b2b_shop_db"
+database_id = "7588223f-bf24-48de-ab6a-f8009d506e49"
 
 # Environment variables
 [vars]
@@ -18,5 +18,5 @@ binding = "IMAGES"
 bucket_name = "b2b-product-images"
 
 [[kv_namespaces]]
-binding = "STATIC_ASSETS" #
-id = "f665b3c2520b4900bc27aef4c8a9d82d" # 从 Cloudflare 获取的 KV Namespace ID
+binding = "POSTER_STORE" #
+id = "a46fb54666694d72b296a5b73eac6b5c" # 从 Cloudflare 获取的 KV Namespace ID
